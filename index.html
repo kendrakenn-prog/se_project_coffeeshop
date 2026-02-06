@@ -8,7 +8,7 @@
     <meta name="description" content="Coffeeshop" />
     <meta name="keywords" content="Cofee, Shop" />
     <link rel="stylesheet" href="./pages/index.css" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -53,17 +53,17 @@
           alt="illustration of a coffeeshop"
           class="header__image"
         />
-      </header>
-      <div class="header__footer">
-        <div>
-          <p class="header__paragraph">Hours:</p>
-          <p class="header__paragraph">Monday – Friday (10:00 – 19:00)</p>
-          <p class="header__paragraph">Saturday – Sunday (11:00 – 18:00)</p>
+        <div class="header__footer">
+          <div>
+            <p class="header__paragraph">Hours:</p>
+            <p class="header__paragraph">Monday – Friday (10:00 – 19:00)</p>
+            <p class="header__paragraph">Saturday – Sunday (11:00 – 18:00)</p>
+            <p class="header__paragraph">
+              200 Success Avenue, The Town of Triple Peaks
+            </p>
+          </div>
         </div>
-        <p class="header__paragraph">
-          200 Success Avenue, The Town of Triple Peaks
-        </p>
-      </div>
+      </header>
       <main class="content">
         <section id="recipes" class="recipes">
           <h2 class="recipes__title">Recipes</h2>
@@ -79,7 +79,6 @@
                 height="315"
                 src="https://www.youtube.com/embed/j6VlT_jUVPc?si=3ZAmsfYks6jFmaYd&amp;controls=0"
                 title="YouTube video player"
-                frameborder="0"
                 allow="
                   accelerometer;
                   autoplay;
@@ -103,7 +102,6 @@
                 height="315"
                 src="https://www.youtube.com/embed/st571DYYTR8?si=gmzNTxyvT9QTgVN_"
                 title="YouTube video player"
-                frameborder="0"
                 allow="
                   accelerometer;
                   autoplay;
@@ -150,13 +148,18 @@
               </label>
               <label for="date-time" class="form__label">
                 Date & time *
-                <input class="form__input" type="datetime-local" required />
+                <input
+                  class="form__input"
+                  type="datetime-local"
+                  id="date-time"
+                  required
+                />
               </label>
-              <label for="" class="form__label">
+              <label for="email" class="form__label">
                 Your email *
                 <input
                   class="form__input"
-                  id="date-time"
+                  id="email"
                   type="email"
                   placeholder="email@email.com"
                   required
@@ -168,7 +171,12 @@
               for="agreement"
               class="form__label form__label_type_checkbox"
             >
-              <input class="form__checkbox" id="agreement" type="checkbox" />
+              <input
+                class="form__checkbox"
+                id="agreement"
+                type="checkbox"
+                required
+              />
               I agree with the terms of use
             </label>
           </form>

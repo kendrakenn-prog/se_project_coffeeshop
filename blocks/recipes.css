@@ -29,6 +29,8 @@
   justify-content: center;
   gap: 100px;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .recipes__video-caption {
@@ -39,4 +41,8 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
+}
+
+.recipes__iframe {
+  border: none;
 }

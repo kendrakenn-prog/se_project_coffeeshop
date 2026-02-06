@@ -28,9 +28,9 @@
   line-height: 20px;
   text-decoration: none;
   cursor: pointer;
-  transition: color 1s;
+  transition: opacity 0.3s ease;
 }
 
-.nav__links:hover {
-  color: #2f80ed;
+.nav__link:hover {
+  opacity: 0.5;
 }
